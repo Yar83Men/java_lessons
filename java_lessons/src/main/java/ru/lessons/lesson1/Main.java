@@ -1,8 +1,11 @@
 package ru.lessons.lesson1;
 
+import ru.lessons.lesson2.Employee;
+
 public class Main {
     public static void main(String[] args) {
         // Примитивные типы данных
+        // ctr + alt + L
         byte byteVar = 1;
         short shortVar = 2;
         int intVar = 3;
@@ -12,7 +15,7 @@ public class Main {
         char charVar = 'a';
         // Мат операции + - / % *
         boolean boolVar = true;
-        System.out.println("byteVar * shortVar = " +  byteVar * shortVar);
+        System.out.println("byteVar * shortVar = " + byteVar * shortVar);
 
     }
 }
