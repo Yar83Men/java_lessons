@@ -44,5 +44,19 @@ public class Person {
         this.firstName = firstName;
     }
 
-    // Повторить для остальных полей по аналогии, кроме static
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }

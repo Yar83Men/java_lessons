@@ -1,5 +1,8 @@
 package ru.lessons.lesson3;
 
+// обычный
+// маркер
+// функциональные имеют только один абстрактный метод
 public interface Calculator {
     // поле интерфейса
     // по умолчанию public static final
@@ -10,4 +13,9 @@ public interface Calculator {
     int subtract(int a, int b);
     int multiply(int a, int b);
     int divide(int a, int b);
+
+    // c реализацией
+    default void print() {
+        System.out.println(message);
+    }
 }
