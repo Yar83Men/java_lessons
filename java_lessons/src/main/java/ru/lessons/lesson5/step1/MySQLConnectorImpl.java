@@ -1,4 +1,4 @@
-package ru.lessons.lesson5.step0;
+package ru.lessons.lesson5.step1;
 
 public class MySQLConnectorImpl extends AbstractDBConnector {
 
