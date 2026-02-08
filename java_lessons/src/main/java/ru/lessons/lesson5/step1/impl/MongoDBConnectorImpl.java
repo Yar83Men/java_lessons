@@ -1,4 +1,6 @@
-package ru.lessons.lesson5.step1;
+package ru.lessons.lesson5.step1.impl;
+
+import ru.lessons.lesson5.step1.AbstractDBConnector;
 
 public class MongoDBConnectorImpl extends AbstractDBConnector {
 

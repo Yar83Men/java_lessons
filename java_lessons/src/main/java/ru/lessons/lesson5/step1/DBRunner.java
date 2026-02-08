@@ -1,8 +1,12 @@
 package ru.lessons.lesson5.step1;
 
+import ru.lessons.lesson5.step1.impl.MongoDBConnectorImpl;
+import ru.lessons.lesson5.step1.impl.MySQLConnectorImpl;
+import ru.lessons.lesson5.step1.impl.PostgresqlConnectorImpl;
+
 public class DBRunner {
     public static void main(String[] args) {
-        DBConnector porstgresql = new PostgreqlConnectorImpl("user",
+        DBConnector porstgresql = new PostgresqlConnectorImpl("user",
                 "123",
                 "localhost",
                 5432,
