@@ -16,6 +16,6 @@ public class PlanGraphicExecutor {
         // выведем на сколько дней создан договор
         // разница между startDate и endDate
         System.out.println(ChronoUnit.DAYS.between(planGraphic.getStartDate(), planGraphic.getEndDate()) + " дней");
-        System.out.println(PlanGraphic.RusClassName);
+        System.out.println(PlanGraphic.SIGNAL_NAME);
     }
 }

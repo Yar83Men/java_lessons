@@ -62,9 +62,7 @@ public class SmartPhone {
                 '}';
     }
 
-    // переопределяем метод equals(Object o) сравнение объектов
-    // унаследован по default
-    // у родителя всех классов class Object
+    // Для сравнения объектов
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
@@ -72,11 +70,13 @@ public class SmartPhone {
         return Double.compare(price, that.price) == 0 && Objects.equals(model, that.model) && Objects.equals(manufacturer, that.manufacturer);
     }
 
-    // переопределяем метод hashCode() используется в Hash коллекциях
-    // унаследован по default
-    // у родителя всех классов class Object
     @Override
     public int hashCode() {
         return Objects.hash(model, manufacturer, price);
+    }
+
+    @Override
+    public SmartPhone clone() {
+        return new SmartPhone(model, manufacturer, price);
     }
 }

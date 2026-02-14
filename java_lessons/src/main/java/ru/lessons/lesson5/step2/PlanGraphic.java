@@ -15,7 +15,7 @@ public class PlanGraphic {
     // признак активности графика гашений
     private boolean isActive;
 
-    public static final String RusClassName = "Плановый график";
+    public static final String SIGNAL_NAME = "Плановый график";
 
     // Приватный конструктор, нет доступа извне
     // Других конструкторов нет
