@@ -3,17 +3,17 @@ package ru.lessons.lesson6.step4;
 public class MicroService {
 
     public static void process(Object task) {
+        if (task instanceof Authorization authorization) {
+           authorization.authorize();
+        }
         if (task instanceof Ordering ordering) {
-           ordering.order();
+            ordering.order();
         }
         if (task instanceof Payment payment) {
             payment.pay();
         }
         if (task instanceof CancelOrder cancelOrder) {
             cancelOrder.cancel();
-        }
-        if (task instanceof Authorization authorization) {
-            authorization.authorize();
         }
     }
 }

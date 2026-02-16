@@ -1,7 +1,7 @@
 package ru.lessons.lesson6.step1;
 
 public enum Gender {
-    MAIL("mail"), FEMALE("female");
+    MALE("male"), FEMALE("female");
 
     private final String value;
     // Конструктор
