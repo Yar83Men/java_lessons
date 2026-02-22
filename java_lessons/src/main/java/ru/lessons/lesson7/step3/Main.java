@@ -4,8 +4,11 @@ public class Main {
     public static void main(String[] args) {
         // Цикл fori
         final var str = "Hello world";
+
+        final char[] chars = str.toCharArray();
+
         final String[] arr = str.split("");
-        for (int i = 0; i < arr.length; i++) {
+           for (int i = 0; i < arr.length; i++) {
             System.out.println("Элемент массива = " + arr[i]);
         }
         System.out.println("*".repeat(30));
@@ -46,8 +49,16 @@ public class Main {
         for (int k = 0; k < matrix.length; k++) {
             System.out.println();
             for (int l = 0; l < matrix.length; l++) {
-                System.out.print(matrix[k][l]);
+                System.out.println(matrix[k][l]);
             }
         }
+
+        int f = 0;
+        for (int n = 0; n < matrix.length && f < matrix.length; n++) {
+            System.out.println();
+            System.out.println(matrix[n][f]);
+            f++;
+        }
+
     }
 }

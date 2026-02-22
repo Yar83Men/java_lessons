@@ -16,7 +16,7 @@ public class StringExecutor {
         System.out.println(String.format("Длина строки s = %d символов", str.length()));
         System.out.println("---------------------------------------------");
         // 2. Объединение строк (`concat`)
-        final var result = str.concat(str2);
+        final var result = str.concat(str2); // str + str2
         System.out.println(result); // Hello World and Java
 
         // 3. Вставка подстроки (`substring`)
@@ -41,17 +41,17 @@ public class StringExecutor {
         System.out.println(replaced); // b@nb@na
 
         // 8. Разделение строки (`split`)
-        String s = "apple,orange,banana";
-        String[] fruits = s.split(",");
+        final String s = "apple,orange,banana";
+        final String[] fruits = s.split(",");
         System.out.println(Arrays.toString(fruits)); // [apple, orange, banana]
 
         // 9. Преобразование строки в массив символов (`toCharArray`)
-        char[] chars = "Java".toCharArray();
+        final char[] chars = "Java".toCharArray();
         System.out.println(Arrays.toString(chars)); // [J, a, v, a]
 
         // 10. Преобразование строки в число (`Integer.parseInt`, `Double.parseDouble`)
-        String numberStr = "1234";
-        int number = Integer.parseInt(numberStr);
+        final String numberStr = "1234";
+        final int number = Integer.parseInt(numberStr);
         System.out.println(number); // 1234
 
         // 11. Проверка, является ли строка пустой

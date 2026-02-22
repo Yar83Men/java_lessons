@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 public class ArraysExecutor {
     public static void main(String[] args) {
-        final int[] numbers = new int[10];
-        final int[] anotherNumbers = {1, 2, 3, 4, 5};
-        final var number = numbers[0];
+        final int[] numbers = new int[10]; // [0, 0, 0, 0, 0, 0, 0, 0, 0]
+        final int[] anotherNumbers = {100, 200, 300, 400, 500};
+        final int number = numbers[0];
         System.out.println("numbers[0] = " + numbers[0]);
-        anotherNumbers[0] = 100;
+        anotherNumbers[0] = 1000;
         System.out.println(Arrays.toString(anotherNumbers)); // [100, 2, 3, 4, 5]
 
         System.out.println("Длина numbers = " + numbers.length); // 10
@@ -26,7 +26,8 @@ public class ArraysExecutor {
         // Матрица
         int[][] matrix = {
                 {1, 2, 3},
-                {4, 5, 6}
+                {4, 5, 6},
+                {4, 6, 11}
         };
         System.out.println(Arrays.deepToString(matrix));
         System.out.println(matrix[0][0]); // 1
