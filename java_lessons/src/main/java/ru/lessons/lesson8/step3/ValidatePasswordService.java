@@ -19,7 +19,7 @@ public class ValidatePasswordService {
         for (char chr : password.toCharArray()) {
             if (Character.isSpaceChar(chr) || Character.isWhitespace(chr)) {
                 return false;
-            } else if (Character.isLetter(chr)) {
+            } else if (Character.isAlphabetic(chr)) {
                 countLetter++;
             } else if (Character.isDigit(chr)) {
                 countNumbers++;

@@ -22,8 +22,8 @@ public class AggregationFunStaticMethodsRunner {
 
     private static void printArray(int[] arr) {
         System.out.print("[");
-        for (int i : arr) {
-            System.out.print(i + ", ");
+        for (int number : arr) {
+            System.out.print(number + ", ");
         }
         System.out.print("]");
     }

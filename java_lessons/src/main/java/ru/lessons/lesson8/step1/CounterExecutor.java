@@ -4,7 +4,7 @@ public class CounterExecutor {
     public static void main(String[] args) {
         final String[] strArray = {"hello", "world", "Java", "Python", "Go"};
         System.out.println("Количество символов в строке = " + countWords(strArray));
-
+        countSymbols(strArray, 'o');
         // количество букв 'o' в массиве строк
         System.out.println("Количество букв 'o' = " + countSymbols(strArray, 'o'));
     }
@@ -21,8 +21,8 @@ public class CounterExecutor {
     private static int countSymbols(String[] str, char chr) {
         int count = 0;
         for (String s : str) {
-            for (int i = 0; i < s.length(); i++) {
-                if (s.charAt(i) == chr) {
+            for (char c : s.toCharArray()) {
+                if (c == chr) {
                     count++;
                 }
             }

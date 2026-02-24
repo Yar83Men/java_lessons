@@ -15,7 +15,7 @@ public class AggregationFunNonStaticMethodsRunner {
     }
 
     // заполнить массив
-    private void fillArray(int[] arr) {
+    public void fillArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Random().nextInt(100);
         }
