@@ -1,7 +1,13 @@
 package ru.lessons.lesson9.step4;
 
+import lombok.Getter;
+
+@Getter
 public class BankAccountException extends RuntimeException {
-    public BankAccountException(String message) {
+    private int businessCode;
+
+    public BankAccountException(String message, int businessCode) {
         super(message);
+        this.businessCode = businessCode;
     }
 }

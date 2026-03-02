@@ -13,10 +13,11 @@ public class BankAccountRunner {
         try {
             final var valid = validator.validate(bankAccount);
             System.out.println("Результат проверки банковского счета = " + valid);
-        } catch (BankAccountException ex) {
-            System.out.println(ex.getMessage());
+        } catch (BankAccountException exception) {
+            System.out.println(exception.getMessage() + " " + exception.getBusinessCode());
+            throw new RuntimeException(exception);
         }
 
-        System.out.println(bankAccount.getLastname().toUpperCase()); // NPE
+        //System.out.println(bankAccount.getLastname().toUpperCase()); // NPE
     }
 }
