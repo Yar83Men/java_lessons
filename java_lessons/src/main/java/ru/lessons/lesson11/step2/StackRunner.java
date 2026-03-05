@@ -6,6 +6,7 @@ import java.util.Stack;
 
 public class StackRunner {
     public static void main(String[] args) {
+        // LIFO
         final Stack<String> stack = new Stack<>();
         stack.push("First");
         stack.push("Second");

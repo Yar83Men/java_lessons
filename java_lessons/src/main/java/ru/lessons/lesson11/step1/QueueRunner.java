@@ -1,9 +1,6 @@
 package ru.lessons.lesson11.step1;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class QueueRunner {
     public static void main(String[] args) {
